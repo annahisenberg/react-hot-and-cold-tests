@@ -9,13 +9,12 @@ export default function Feedback(props) {
    * This is necessary for consistent aural feedback via aria-live.
   */
   const key = props.guessCount;
-
   let guessAgain;
   if (key !== 0) {
     guessAgain = <span className="visuallyhidden">Guess again!</span>;
   }
   return (
-    <h2 
+    <h2
       key={key}
       id="feedback"
       role="status"
